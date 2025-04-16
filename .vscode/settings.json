@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "alisson",
+        "baseedir",
         "csholmq",
         "davidanson",
         "debugtoolbar",
@@ -8,6 +9,7 @@
         "dotenv",
         "eamodio",
         "gfortran",
+        "imwrite",
         "ipython",
         "isort",
         "jsonify",
