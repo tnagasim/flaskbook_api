@@ -7,6 +7,7 @@
         "debugtoolbar",
         "devcontainers",
         "dotenv",
+        "dpkg",
         "eamodio",
         "gfortran",
         "imwrite",
@@ -15,16 +16,19 @@
         "jsonify",
         "libamd",
         "libcholmod",
+        "libgl",
         "liblapack",
         "libmetis",
         "libnauty",
         "libopencv",
         "libsuitesparse",
+        "localtime",
         "markdowntabl",
         "marp",
         "matplotlib",
         "mhutchie",
         "mypy",
+        "noninteractive",
         "opencv",
         "plotly",
         "pylance",
@@ -35,7 +39,9 @@
         "takumii",
         "toolsai",
         "torchvision",
+        "tzdata",
         "wtforms",
-        "yzhang"
+        "yzhang",
+        "zoneinfo"
     ]
 }

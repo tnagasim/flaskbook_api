@@ -20,7 +20,7 @@ def detection(request):
     image, filename = load_image(request)
     image_tensor = image_to_tensor(image)
     try:
-        model = torch.load("model.pt")
+        model = torch.load("model.pt", weights_only=False)
     except FileNotFoundError:
         return jsonify("The model is not found"), 404
     model = model.eval()
@@ -36,6 +36,6 @@ def detection(request):
             draw_lines(c1, c2, result_image, line, color)
             draw_texts(result_image, line, c1, color, labels[label])
             dict_results[labels[label]] = round(100 * score.item())
-        dir_image = str(baseedir / "data" / "output" / filename)
-        cv2.imwrite(dir_image, cv2.cvtColor(result_image, cv2.COLOR_RGB2GBR))
-        return jsonify(dict_results), 201
+    dir_image = str(baseedir / "data" / "output" / filename)
+    cv2.imwrite(dir_image, cv2.cvtColor(result_image, cv2.COLOR_RGB2BGR))
+    return jsonify(dict_results), 201
