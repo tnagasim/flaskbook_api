@@ -1,7 +1,10 @@
 ipython
 jupyter
 matplotlib
-plotly
 pandas
+plotly
 pytest
 scikit-learn
+torch
+torchaudio
+torchvision
